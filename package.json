@@ -1,1 +1,17 @@
-
+{
+  "name": "discord-webhook-guard",
+  "version": "1.0.0",
+  "description": "Webhook protection bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
