@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: discord-webhook-guard
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 18.20.0
+      - key: DISCORD_TOKEN
+        generateValue: false
+      - key: PROTECTED_CHANNELS
+        generateValue: false
+      - key: SPAM_THRESHOLD
+        value: 10
+      - key: SPAM_WINDOW
+        value: 5000
