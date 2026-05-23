@@ -533,7 +533,7 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 // ================= STARTUP =================
-client.once('ready', async () => {
+client.once('clientReady', async () => {
   console.log(`[BOT] Logged in as ${client.user.tag}`);
 
   // Register slash commands globally
