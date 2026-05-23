@@ -10,9 +10,9 @@ services:
       - key: NODE_VERSION
         value: 18.20.0
       - key: DISCORD_TOKEN
-        generateValue: false
-      - key: PROTECTED_CHANNELS
-        generateValue: false
+        sync: false
+      - key: BASE_URL
+        sync: false
       - key: SPAM_THRESHOLD
         value: 10
       - key: SPAM_WINDOW
